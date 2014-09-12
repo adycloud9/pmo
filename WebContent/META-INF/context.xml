@@ -1,0 +1,59 @@
+<Context path="/pmo" reloadable="true">
+ <Resource name="jdbc/pms_dev" scope="shareable" type="javax.sql.DataSource"/>
+ <ResourceParams name="jdbc/pms_dev">
+        <parameter>
+			<name>factory</name>
+			<value>org.apache.commons.dbcp.BasicDataSourceFactory</value>
+		</parameter>
+		<!-- DBCP database connection settings  -->
+		<parameter>
+			<name>url</name>
+			<value>jdbc:mysql://172.16.43.98:3306/test</value>
+		</parameter>
+		
+		<parameter>
+			<name>driverClassName</name>
+			<value>com.mysql.jdbc.Driver</value>
+		</parameter>
+		
+		<parameter>
+			<name>username</name>
+			<value>root</value>
+		</parameter>
+		
+		<parameter>
+			<name>password</name>
+			<value>Pa55word</value>			
+		</parameter>
+		
+		<parameter>
+			<name>maxWait</name>
+			<value>3000</value>
+		</parameter>
+		
+		<parameter>
+			<name>maxIdle</name>
+			<value>100</value>
+		</parameter>
+		
+		<parameter>
+			<name>maxActive</name>
+			<value>10</value>
+		</parameter>
+
+		<parameter>
+			<name>removeAbandoned</name>
+			<value>true</value>
+		</parameter>
+
+		<parameter>
+			<name>removeAbandonedTimeout</name>
+			<value>60</value>
+		</parameter>
+
+		<parameter>
+			<name>logAbandoned</name>
+			<value>true</value>
+		</parameter>
+ </ResourceParams>
+</Context>

@@ -1,0 +1,11 @@
+td, body {color:#FFFFFF; font-family:Tahoma, Arial, Helvetica; font-size:10px;}
+ab {color:#FFFFFF; text-decoration:none; font-weight:bold;}
+ab:hover {color:#FFFFFF; text-decoration:none; ;}
+ab:active {color:#FFFFFF; text-decoration:none; font-weight:bold ;}
+
+.menutitle {color:#000000; text-decoration:none; font-family:arial,verdana;font-size:11;font-weight:bold;}
+.menutitle:hover {color:#000000; text-decoration:underline;font-family:arial,verdana;font-size:11;font-weight:bold;}
+
+
+.mlink {TEXT-DECORATION: none; font-family:arial,verdana;font-size:11; color : #000000;}
+.mlink:hover {TEXT-DECORATION: underline; font-family:arial,verdana;font-size:11; none; color :#000000;}

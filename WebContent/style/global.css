@@ -1,0 +1,281 @@
+/* 
+ * Created on Apr 29, 2005
+ ** Name: Constants.java
+ * <p> 
+ * <b>Revision History:</b><pre> 
+ * ======================================================================================== 
+ *                                 Prior 
+ * Date       By                   Version  Description 
+ * ---------- -------------------- -------  ---------------------------------------------------- 
+ * 
+ * ======================================================================================== 
+ * </pre> 
+ * 
+  
+*/
+.chead {
+	TEXT-DECORATION: bold;
+	font-family: arial, verdana, arial;
+	font-size: 13;
+	color: #000000;
+}
+
+.chead:hover {
+	TEXT-DECORATION: bold;
+	font-family: arial black, verdana, arial;
+	font-size: 13;
+	color: #000000;
+}
+
+.chead1 {
+	TEXT-DECORATION: none;
+	font-family: arial, verdana, arial;
+	font-size: 20;
+	color: #000000;
+}
+
+.chead2 {
+	TEXT-DECORATION: none;
+	font-family: arial, verdana, arial;
+	font-size: 12.5;
+	color: #000000;
+}
+
+.a {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.content {
+	TEXT-DECORATION: none;
+	background-color: #E0F8FF font-family : verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.wocontent {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.formtext {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.disabledformtext {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+	background: #F0F0F0;
+}
+
+.disabledformtextField{
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 12;
+	width:145px;
+	height:21px;
+	color: #000000;
+	background: #F0F0F0;
+}
+
+
+.tlink {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.tlink:hover {
+	TEXT-DECORATION: underline;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.thead {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #ffffff;;
+	font-weight: bold;;
+	/* background: #34282C;*/
+	background-image:url('..\images\rowStrip1.JPG');
+	background-repeat:repeat-x;
+}
+.fixedThead {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11px;
+	color: #ffffff;;
+	font-weight: bold;
+	/*background: #3063A5;*/
+	background-image:url('..\images\rowStrip1.JPG');
+	background-repeat:repeat-x;
+	position: relative;
+    top: expression(this.offsetParent.scrollTop-2);
+}
+
+.trow {
+	TEXT-DECORATION: none;
+	align: left;
+	font-family: verdana, arial;;
+	font-size: 11px;
+	color: #000000;
+	background: #95B9C7; 
+}
+
+
+.menurow {
+	background-image:url('..\images\menuShade.JPG');
+	background-repeat:repeat-x;
+}
+.menurowinvert {
+	background-image:url('..\images\menuShadeInvert1.JPG');
+	background-repeat:repeat-x;
+}
+.columnShade {
+	background-image:url('..\images\columnShade.JPG');
+	background-repeat:repeat-x;
+}
+.columnShadeInvert {
+	background-image:url('..\images\columnShadeInvert.JPG');
+	background-repeat:repeat-x;
+}
+/* Version 1.1 starts */
+.trow_alt {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;;
+	background: #FFFFCC;
+}
+
+.topImage {
+	background-image:url('..\images\topImg.JPG');
+	background-repeat:repeat-x;
+}
+
+.trow_white {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;;
+	background: #FFFFFF;
+}
+.submenuhighlight {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;;
+	background: #C6E2FF;
+}
+/* Version 1.1 ends */ /* Version 1.2 starts */
+.image {
+	position: relative;
+	float: left;
+}
+
+.image .text {
+	position: absolute;
+	top: 7px;
+	left: 18px;
+	width: 300px;
+}
+
+/* Version 1.2 ends */
+.sbttn {
+	BACKGROUND: #ffffff;
+	BORDER-BOTTOM: #2A2A2A 1px solid;
+	BORDER-LEFT: #C4C4C4 1px solid;
+	BORDER-RIGHT: #2A2A2A 1px solid;
+	BORDER-TOP: #C4C4C4 1px solid;
+	COLOR: #473A22;
+	CURSOR: hand;
+	FONT-FAMILY: tahoma, sans-serif;
+	FONT-SIZE: 11px;
+	HEIGHT: 16px;
+	TEXT-DECORATION: none
+}
+
+/*
+.sbttn {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #23459E;
+	text-decoration: none;
+	font-weight: normal;
+}
+*/ /* set the image to use and establish the lower-right position */
+.cssbox,.cssbox_body,.cssbox_head,.cssbox_head h2 {
+	background: transparent url(YourImageHere.png) no-repeat bottom right;
+}
+
+.cssbox {
+	width: 335px !important;
+	/* intended total box width - padding-right(next) */
+	width: 320px; /* IE Win = width - padding */
+	padding-right: 15px;
+	/* the gap on the right edge of the image (not content padding) */
+	margin: 20px auto; /* use to position the box */
+}
+
+/* set the top-right image */
+.cssbox_head {
+	background-position: top right;
+	margin-right: -15px; /* pull the right image over on top of border */
+	padding-right: 40px; /* right-image-gap + right-inside padding */
+}
+
+/* set the top-left image */
+.cssbox_head h2 {
+	background-position: top left;
+	margin: 0; /* reset main site styles*/
+	border: 0; /* ditto */
+	padding: 25px 0 15px 40px;
+	/* padding-left = image gap + interior padding ... no padding-right */
+	height: auto !important;
+	height: 1%; /* IE Holly Hack */
+}
+
+/* set the lower-left corner image */
+.cssbox_body {
+	background-position: bottom left;
+	margin-right: 25px; /* interior-padding right */
+	padding: 15px 0 15px 40px; /* mirror .cssbox_head right/left */
+}
+
+/*ver 1.2 starts here 
+ set the table border */
+table.borderStyle {
+	border-width: thin;
+	border-spacing: ;
+	border-style: inset;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: #cee1f0;
+}
+
+table.borderStyle td {
+	border-width: 0px;
+	padding: 0px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #cee1f0;
+	-moz-border-radius: ;
+}
+
+
+ /* ver 1.2 ends here */
+ 
+ 

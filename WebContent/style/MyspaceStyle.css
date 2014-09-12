@@ -1,0 +1,13 @@
+.sbttn {
+	BACKGROUND: #ffffff;
+	BORDER-BOTTOM: #2A2A2A 1px solid;
+	BORDER-LEFT: #C4C4C4 1px solid;
+	BORDER-RIGHT: #2A2A2A 1px solid;
+	BORDER-TOP: #C4C4C4 1px solid;
+	COLOR: #473A22;
+	CURSOR: hand;
+	FONT-FAMILY: tahoma, sans-serif;
+	FONT-SIZE: 11px;
+	HEIGHT: 19px;
+	TEXT-DECORATION: none
+}

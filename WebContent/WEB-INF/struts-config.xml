@@ -1,0 +1,125 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<!--
+	Written By 153740 Prashant Chaturvedi.
+	
+	NOTE: If you have a generator tool to create the corresponding Java classes
+	for you, you could include the details in the "form-bean" declarations.
+	Otherwise, you would only define the "form-bean" element itself, with the
+	corresponding "name" and "type" attributes, as shown here.
+-->
+<struts-config>
+
+	<!-- ================================================ Form Bean Definitions -->
+	<form-beans>
+		<form-bean name="loginForm" type="com.vsnl.struts.forms.LoginForm" />
+		<form-bean name="sowForm" type="com.vsnl.struts.forms.SowForm" />
+		<form-bean name="pmoScrForm" type="com.vsnl.struts.forms.PmoScrForm" />
+		<form-bean name="poAddForm" type="com.vsnl.struts.forms.PoAddForm" />
+		<form-bean name="wonAddForm" type="com.vsnl.struts.forms.WonAddForm" />
+		<form-bean name="wcrForm" type="com.vsnl.struts.forms.WcrForm" />
+		<form-bean name="popupForm" type="com.vsnl.struts.forms.PopupForm" /><!-- Added by Soumya -->
+		<form-bean name="reportForm" type="com.vsnl.struts.forms.ReportsForm" />
+		
+	</form-beans>
+	<action-mappings>
+		<action path="/Welcome" forward="/pages/welcome.jsp" />
+
+		<action path="/login" name="loginForm"
+			type="com.vsnl.struts.actions.LoginAction" parameter="method">
+			<forward name="chgPass" path="/pages/chgPass.jsp" />
+			<forward name="sow" path="/pages/sow.jsp" />
+			<forward name="Login" path="/pages/login.jsp" />
+			<forward name="success" path="/pages/success.jsp" />
+			<forward name="failure" path="/pages/failure.jsp" />
+			<forward name="pmo" path="/pages/pmoScr.jsp" />
+			<forward name="showReset" path="/pages/resetPassword.jsp" />
+			<forward name="Logout" path="/pages/logout.jsp" />
+			<forward name="getDownloadOption" path="/fileDownloadAction.do" />
+			
+		</action>
+		<!-- Siba ver starts here -->
+		<action path="/sow" name="sowForm"
+			type="com.vsnl.struts.actions.SowAction" parameter="method">
+			<forward name="sow" path="/pages/sow.jsp" />
+			<forward name="editSowPage" path="/pages/editSow.jsp" />
+			<forward name="getDownloadOption" path="/fileDownloadAction.do" />
+		</action>
+		<action path="/fileDownloadAction" 
+			type="com.vsnl.struts.actions.FileDownloadAction">
+		</action>
+		<!-- Siba ver ends here -->
+		<action path="/pmoscr" name="pmoScrForm"
+			type="com.vsnl.struts.actions.PmoScrAction" parameter="method">
+			<forward name="pmo" path="/pages/pmoScr.jsp" />
+			<forward name="failure" path="/pages/failure.jsp" />
+			<forward name="search" path="/pages/searchUser.jsp" />
+			<forward name="delete" path="/pages/deleteUser.jsp" />
+			<forward name="success" path="/pages/success.jsp" />
+			<forward name="main" path="/pages/main.jsp" />
+			<forward name="edit" path="/pages/pmoScr.jsp" />
+			<forward name="successPage" path="/pages/addRoleDropdown.jsp"/>
+		</action>
+		  <action path="/poadd" name="poAddForm" type="com.vsnl.struts.actions.PoAction" parameter="method">	
+    	 <forward name="showPoPageJsp" path="/pages/poAddEdit.jsp" /> <!-- Added by Soumya -->
+    	 <forward name="showEditJsp" path="/pages/poEdit.jsp" /> <!-- Added by Soumya -->
+    	 <forward name= "success" path= "/pages/success.jsp" />	
+    	 <forward name="getDownloadOption" path="/fileDownloadAction.do" />
+      </action>
+		<!-- ver anindita starts here -->
+		<action path="/wonadd"
+			type="com.vsnl.struts.actions.WonAction"
+			name="wonAddForm"
+			parameter="method"
+			validate="false">
+			<forward name="showPage" path="/pages/addWon.jsp" />
+		<!-- <forward name="searchDetails" path="/pages/wonAdd.jsp" /> -->
+		</action>
+		<!-- ver anindita ends here -->
+		
+		<!-- Added by Soumya -->
+		<action path="/callAjax"
+			type="com.vsnl.struts.actions.AjaxAction"
+			parameter="method"
+			validate="false" >
+		</action>
+		
+		<action path="/getPopup"
+			type="com.vsnl.struts.actions.PopupAction"
+			name="popupForm"
+			parameter="method"
+			validate="false" >
+			<forward name="showPopupPage" path="/pages/popups/popup.jsp" />
+		</action>
+		
+		<action path="/wcr" name="wcrForm"
+			type="com.vsnl.struts.actions.WcrCreateAction" parameter="method">
+			<forward name="success" path="/pages/success.jsp" />
+			<forward name="wcr" path="/pages/wcrCreate.jsp" />
+			<forward name="WCRjsp" path="/pages/wcr.jsp" />
+			<forward name="EditWcrJsp" path="/pages/editwcr.jsp" />
+			<forward name="ReprintWcrJsp" path="/pages/reprintWcr.jsp" />
+			<forward name="BilledWCRJsp" path="/pages/billedWCR.jsp" />
+	    	<forward name="wcrPreviewjsp" path="/pages/wcrPreview.jsp" /><!--sanjay-->
+		</action>
+		<!-- Added by Soumya -->
+		<action path="/report"
+			type="com.vsnl.struts.actions.ReportsAction"
+			name="reportForm"
+			parameter="method"
+			validate="false">
+			<forward name="success" path="/pages/reportDetails.jsp" />
+			<forward name="getDownloadOption" path="/fileDownloadAction.do" />
+		</action>
+		
+		<action path="/pdfreport" 
+		name="wcrForm"
+		parameter="method"
+		type="com.vsnl.struts.actions.PDFWriterAction" 
+		validate="false">
+		</action>
+		
+	</action-mappings>
+
+	<!-- ======================================== Message Resources Definitions -->
+    <message-resources parameter="resources.application" />
+</struts-config>

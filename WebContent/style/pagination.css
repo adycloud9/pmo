@@ -1,0 +1,37 @@
+table.page {
+	background-color: #fc0;
+	margin: 0px 0 0px 0;
+	width: 80%;
+	border-collapse: collapse;
+	padding: 0px 0 0px 0;
+	border: dashed thin 1px;
+}
+
+th,td {
+	padding: 2px 4px 2px 4px;
+	text-align: left;
+	vertical-align: top;
+}
+
+thead tr {
+	background-color: #fc0;
+	align: right
+}
+
+tr.odd {
+	background-color: #fff
+}
+
+tr.tableRowEven,tr.even {
+	background-color: #fea
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}

@@ -1,0 +1,176 @@
+.chead {
+	TEXT-DECORATION: bold;
+	font-family: arial, verdana, arial;
+	font-size: 13;
+	color: #000000;
+}
+
+.chead:hover {
+	TEXT-DECORATION: bold;
+	font-family: arial black, verdana, arial;
+	font-size: 13;
+	color: #000000;
+}
+
+.chead1 {
+	TEXT-DECORATION: none;
+	font-family: arial, verdana, arial;
+	font-size: 20;
+	color: #000000;
+}
+
+.chead2 {
+	TEXT-DECORATION: none;
+	font-family: arial, verdana, arial;
+	font-size: 12.5;
+	color: #000000;
+}
+
+.a {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.content {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.wocontent {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.formtext {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.disabledformtext {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+	background: #F0F0F0;
+}
+
+.tlink {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.tlink:hover {
+	TEXT-DECORATION: underline;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;
+}
+
+.thead {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #ffffff;;
+	font-weight: bold;;
+	background: #EE4000;
+}
+
+.trow {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;;
+	background: #FEF0DB;
+}
+
+.trow:hover {
+	TEXT-DECORATION: none;
+	font-family: verdana, arial;;
+	font-size: 11;
+	color: #000000;;
+	background: #1A5B95;
+}
+
+.sbttn {
+	BACKGROUND: #ffffff;
+	BORDER-BOTTOM: #2A2A2A 1px solid;
+	BORDER-LEFT: #C4C4C4 1px solid;
+	BORDER-RIGHT: #2A2A2A 1px solid;
+	BORDER-TOP: #C4C4C4 1px solid;
+	COLOR: #473A22;
+	CURSOR: hand;
+	FONT-FAMILY: tahoma, sans-serif;
+	FONT-SIZE: 11px;
+	HEIGHT: 16px;
+	TEXT-DECORATION: none
+}
+
+.browse {
+	BACKGROUND: #ffffff;
+	BORDER-BOTTOM: #2A2A2A 1px solid;
+	BORDER-LEFT: #C4C4C4 1px solid;
+	BORDER-RIGHT: #2A2A2A 1px solid;
+	BORDER-TOP: #C4C4C4 1px solid;
+	FONT-FAMILY: tahoma, sans-serif;
+	FONT-SIZE: 11px;
+	HEIGHT: 16px;
+	TEXT-DECORATION: none
+}
+
+/*
+.sbttn {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #23459E;
+	text-decoration: none;
+	font-weight: normal;
+}
+*/ /* set the image to use and establish the lower-right position */
+.cssbox,.cssbox_body,.cssbox_head,.cssbox_head h2 {
+	background: transparent url(YourImageHere.png) no-repeat bottom right;
+}
+
+.cssbox {
+	width: 335px !important;
+	/* intended total box width - padding-right(next) */
+	width: 320px; /* IE Win = width - padding */
+	padding-right: 15px;
+	/* the gap on the right edge of the image (not content padding) */
+	margin: 20px auto; /* use to position the box */
+}
+
+/* set the top-right image */
+.cssbox_head {
+	background-position: top right;
+	margin-right: -15px; /* pull the right image over on top of border */
+	padding-right: 40px; /* right-image-gap + right-inside padding */
+}
+
+/* set the top-left image */
+.cssbox_head h2 {
+	background-position: top left;
+	margin: 0; /* reset main site styles*/
+	border: 0; /* ditto */
+	padding: 25px 0 15px 40px;
+	/* padding-left = image gap + interior padding ... no padding-right */
+	height: auto !important;
+	height: 1%; /* IE Holly Hack */
+}
+
+/* set the lower-left corner image */
+.cssbox_body {
+	background-position: bottom left;
+	margin-right: 25px; /* interior-padding right */
+	padding: 15px 0 15px 40px; /* mirror .cssbox_head right/left */
+}

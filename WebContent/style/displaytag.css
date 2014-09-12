@@ -1,0 +1,128 @@
+.displayTable table {
+	border: 1px solid #666;
+	width: 80%;
+	margin: 20px 0 20px 0 !important;
+}
+
+.displayTable  th {
+	padding: 2px 4px 2px 4px !important;
+	text-align: center;
+	vertical-align: top;
+	background-image:url('..\images\rowStrip1.JPG');
+	background-repeat:repeat-x;
+}
+
+.displayTable  td {
+	padding: 2px 4px 2px 4px !important;
+	text-align: center;
+	vertical-align: top;
+}
+
+.displayTable  thead tr {
+TEXT-DECORATION: none; font-family:verdana,arial;font-size:11; color : #ffffff;font-weight:bold;background: #3063A5;
+}
+
+.displayTable  th.sorted {
+	background-color: #3063A5;
+}
+
+.displayTable  th a,.displayTable  th a:visited {
+	color: white;
+}
+
+.displayTable th a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.displayTable  th.sorted a,.displayTable  th.sortable a {
+	background-position: right;
+	text-decoration:none;
+	display: block;
+	color: #ffffff;
+	width: 100%;
+}
+
+.displayTable  th.sortable a {
+	background: url(../img/arrow_off.png) no-repeat right center ;
+}
+
+.displayTable  th.order1 a {
+	background: url(../img/arrow_down.png) no-repeat right center ;
+}
+
+.displayTable  th.order2 a {
+	background: url(../img/arrow_up.png) no-repeat right center;
+}
+
+.displayTable  tr.odd {
+	TEXT-DECORATION: none; font-family:verdana,arial;font-size:11; color : #000000;background: whitesmoke; word-wrap: break-word;
+}
+
+.displayTable  tr.tableRowEven,.displayTable tr.even {
+	TEXT-DECORATION: none; font-family:verdana,arial;font-size:11; color : #000000;background: #cee1f0; word-wrap: break-word;
+}
+
+.displayTable  div.exportlinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 79%;
+}
+
+.displayTable  span.export {
+	padding: 0 4px 1px 20px;
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.displayTable  span.excel {
+	background-image: url(../img/ico_file_excel.png);
+}
+
+.displayTable span.csv {
+	background-image: url(../img/ico_file_csv.png);
+}
+
+.displayTable span.xml {
+	background-image: url(../img/ico_file_xml.png);
+}
+
+.displayTable span.pdf {
+	background-image: url(../img/ico_file_pdf.png);
+}
+
+.displayTable span.rtf {
+	background-image: url(../img/ico_file_rtf.png);
+}
+
+.displayTable span.pagebanner {
+	font-family:verdana,arial;font-size:11;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 79%;
+	margin-top: 10px;
+	display: block;
+	border-bottom: none;
+	
+}
+
+.displayTable span.pagelinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 79%;
+	display: block;
+	border-top: none;
+	margin-bottom: -5px;
+}
+
+.displayTableAmt{
+	padding: 2px 4px 2px 4px !important;
+	text-align: right;
+	vertical-align: top;
+}
+
+
